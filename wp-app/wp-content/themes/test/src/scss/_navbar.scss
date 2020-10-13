@@ -1,0 +1,111 @@
+.hearoHeader {
+  position: relative;
+
+  .navbar {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+  }
+}
+
+
+.menuLinks {
+  li {
+    color: #303030;
+
+    a {
+      color: #303030;
+      font-size: 0.8rem !important;
+      font-weight: 400 !important;
+      letter-spacing: .3em !important;
+      line-height: 1.8em !important;
+      word-spacing: 0 !important;
+      margin: 0 5px;
+      text-decoration: none;
+      text-transform: uppercase !important;
+    }
+  }
+
+  @media (min-width: 991px) {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+  }
+}
+
+.logoMenu {
+  width: 150px;
+  height: auto;
+
+  &__desktop {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+}
+
+.navbar {
+  z-index: 1;
+  background: rgba($color: #ffffff, $alpha: .7);
+  @media (max-width: 991px) {
+    background-color: #f3e8db !important;
+  }
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.menu-item {
+  a {
+    transition: 0.5s;
+  }
+
+  a:hover {
+    color: #9b9b9b;
+  }
+
+}
+
+.carouser-banner {
+  //position: absolute !important;
+  top: 0 !important;
+  padding-bottom: 88px;
+
+
+  @media (min-width: 992px) {
+    // position: static;
+    // top: 0;
+  }
+
+  &__image-item {
+    height: 90vh !important;
+    width: 100vw !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 992px) {
+      height: 80vh !important;
+    }
+  }
+}
+
+.carousel-indicators{
+  bottom: 80px !important;
+}
+
+.carousel-control-prev{
+  height: 90vh;
+}
+.carousel-control-next{
+  height: 90vh;
+}
